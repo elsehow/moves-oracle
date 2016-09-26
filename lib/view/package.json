@@ -1,4 +1,6 @@
 {
+  "name": "oracle-view",
+  "version": "0.0.1",
   "main": "src/index.js",
   "scripts": {
     "watch": "watchify -vd -p browserify-hmr test/index.js -o test/bundle.js",
