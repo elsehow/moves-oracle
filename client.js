@@ -6,15 +6,15 @@ var view      = require('oracle-view')
 function modelStreamF (n) {
   return modelS(
     require('./token'),
-    '201609', {
+    10, {
       n: n,
-      slice_min: 10,
+      slice_min: 60,
     }
   )
 }
 
 var store = modelcont(modelStreamF, {
-  n: 7,
+  n: 5,
 })
 
 let dispatchF = x => store.dispatch(x)
